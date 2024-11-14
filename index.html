@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página dedicada al arte de los amigurumis. Encuentra tutoriales, imágenes y más sobre estos tiernos muñecos de crochet.">
+    <title>Amigurumis - Arte Crochet</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Si tienes un archivo de estilo CSS -->
+    <style>
+        /* Estilo básico para centrar todo el contenido */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center; /* Centra todo el contenido textual */
+            background-color: #f7f7f7;
+        }
+
+        header, footer {
+            background-color: lightpink;
+            padding: 20px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1, h2 {
+            color: fuchsia;
+        }
+
+        .galeria {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .galeria img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        form {
+            display: inline-block;
+            text-align: left;
+            margin-top: 20px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        form input[type="submit"] {
+            width: auto;
+            background-color: fuchsia;
+            color: white;
+            cursor: pointer;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: fuchsia;
+        }
+
+        footer p {
+            color: fuchsia;
+            font-size: 14px;
+        }
+
+        footer {
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#introduccion">¿Qué son los amigurumis?</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#tutoriales">Tutoriales</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección principal -->
+    <main>
+        <!-- Sección de Introducción -->
+        <section id="introduccion">
+            <h1>¿Qué son los Amigurumis?</h1>
+            <p>Los amigurumis son muñecos tejidos a crochet, puedes encontrar un amigurumi de cualquier cosa que puedas imaginar. Son muñequitos realizados con mucho amor y dedicación, cada uno es muy especial.</p>
+        </section>
+
+        <!-- Sección de Galería -->
+        <section id="galeria">
+            <h2>Galería de Amigurumis</h2>
+            <p>Conoce algunos de los amigurumis más tiernos:</p>
+            <div class="galeria">
+                <img src="Imagenes/Imag1.jpg" alt="Hello Kitty" width="200">
+                <img src="Imagenes/Imag2.jpg" alt="Spiderman" width="200">
+                <img src="Imagenes/Imag3.jpg" alt="Santa Claus" width="200">
+            </div>
+        </section>
+
+        <section id="tutoriales">
+            <h2>Tutoriales para Crear Amigurumis</h2>
+            <p>Si a ti, al igual que a mi te interesa aprender a crear estas lindas figuras, te dejo algunos enlaces que te serán de gran ayuda para comenzar:</p>
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=M8vHZjA_du8&list=PLyQ0duqcbHpw2j4ysPPO-0kc98fXkiwHR" target="_blank">Tutorial: Curso de amigurumis para principiantes.</a></li>
+                <li><a href="https://www.youtube.com/watch?v=Sgqy8QGn6fg&list=PLAtMlAPFymt00-mq0OhQmqNX5vnjPsjFw" target="_blank">Tutorial: Cómo hacer amigurumis paso a paso.</a></li>
+                <li><a href="https://www.youtube.com/watch?v=hBZEVm67Xeg" target="_blank">Tutorial: Pollito vaquero para llavero, fácil y perfecto para principiantes.</a></li>
+                <li><a href="https://www.youtube.com/watch?v=NjAXi1iAKzI" target="_blank">Tutorial: Vaquita fresa a crochet.</a></li>
+            </ul>
+        </section>        
+
+        <!-- Sección de Contacto -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Espero que te diviertas aprendiendo y creando lindas figuras, si necesitas algún consejo no dudes en ponerte en contacto conmigo:</p>
+            <form action="procesar_formulario.php" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Amigurumis. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
