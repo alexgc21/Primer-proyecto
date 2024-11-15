@@ -1,4 +1,4 @@
-# Mi Proyecto Web
+# AMIGURUMIS - Mi Proyecto Web
 
 Este es mi proyecto final para el primer módulo del programa que estoy cursando con Dev.f.
 
